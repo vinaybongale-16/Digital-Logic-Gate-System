@@ -1,109 +1,78 @@
-# Digital Logic Gate System
+# 🔌 Digital Logic Gate System
 
-A C-based console application that demonstrates fundamental digital
-logic gates and generates their truth tables.
+<p align="center">
+  <b>A C-based console application for understanding and working with fundamental digital logic gates.</b>
+</p>
 
-## Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c">
+  <img src="https://img.shields.io/badge/Project-Digital%20Logic-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Level-Beginner-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge">
+</p>
 
-The **Digital Logic Gate System** is a menu-driven C program designed to
-demonstrate the basic operations of digital logic gates using binary
-inputs (`0` and `1`).
+---
 
-The system supports:
+## 📌 About the Project
 
--   AND Gate
--   OR Gate
--   NOT Gate
--   NAND Gate
--   NOR Gate
--   XOR Gate
--   XNOR Gate
--   Complete Truth Table
+**Digital Logic Gate System** is a menu-driven C program that demonstrates the working of fundamental digital logic gates using binary inputs (`0` and `1`).
 
-The program also validates user input and accepts only binary values for
-gate operations.
+The program allows users to select a logic gate, provide binary inputs, and view the corresponding output. It also provides a complete truth table for the supported two-input logic gates.
 
-## Features
+This project connects **C programming fundamentals** with concepts from **Digital Electronics and Logic Design**.
 
--   Interactive console-based menu
--   Seven fundamental logic gates
--   Binary input validation
--   Individual gate output calculation
--   Complete truth table generation
--   Simple and beginner-friendly C implementation
--   Uses functions for each logic-gate operation
+---
 
-## Logic Gates
+## ✨ Features
 
-  Gate   Operation
-  ------ -------------
-  AND    `A && B`
-  OR     `A || B`
-  NOT    `!A`
-  NAND   `!(A && B)`
-  NOR    `!(A || B)`
-  XOR    `A ^ B`
-  XNOR   `!(A ^ B)`
+* 🔹 Interactive menu-driven interface
+* 🔹 Supports **7 fundamental logic gates**
+* 🔹 Binary input validation
+* 🔹 Individual gate output calculation
+* 🔹 Complete logic-gate truth table
+* 🔹 Simple and beginner-friendly implementation
+* 🔹 Modular programming using functions
+* 🔹 Console-based execution
 
-## Truth Table
+---
 
-  A   B   AND   OR   NAND   NOR   XOR   XNOR
-  --- --- ----- ---- ------ ----- ----- ------
-  0   0   0     0    1      1     0     1
-  0   1   0     1    1      0     1     0
-  1   0   0     1    1      0     1     0
-  1   1   1     1    0      0     0     1
+## 🧠 Logic Gates Supported
 
-## Project Structure
+| # | Logic Gate | Symbol | Operation   |   |     |
+| - | ---------- | ------ | ----------- | - | --- |
+| 1 | AND        | ∧      | `A && B`    |   |     |
+| 2 | OR         | ∨      | `A          |   | B`  |
+| 3 | NOT        | ¬      | `!A`        |   |     |
+| 4 | NAND       | ⊼      | `!(A && B)` |   |     |
+| 5 | NOR        | ⊽      | `!(A        |   | B)` |
+| 6 | XOR        | ⊕      | `A ^ B`     |   |     |
+| 7 | XNOR       | ⊙      | `!(A ^ B)`  |   |     |
 
-``` text
-Digital-Logic-Gate-System/
-│
-├── Digital_Logic_Gate_System.c
-├── README.md
-└── .gitignore
+---
+
+## 📊 Truth Table
+
+### Two-Input Logic Gates
+
+| A | B | AND | OR | NAND | NOR | XOR | XNOR |
+| - | - | --- | -- | ---- | --- | --- | ---- |
+| 0 | 0 | 0   | 0  | 1    | 1   | 0   | 1    |
+| 0 | 1 | 0   | 1  | 1    | 0   | 1   | 0    |
+| 1 | 0 | 0   | 1  | 1    | 0   | 1   | 0    |
+| 1 | 1 | 1   | 1  | 0    | 0   | 0   | 1    |
+
+### NOT Gate
+
+| A | NOT |
+| - | --- |
+| 0 | 1   |
+| 1 | 0   |
+
+---
+
+## 🖥️ Program Menu
+
 ```
-
-## Requirements
-
--   C compiler such as GCC
--   Command-line terminal
--   Basic C programming environment
-
-## How to Run
-
-### 1. Clone the repository
-
-``` bash
-git clone https://github.com/vinaybongale-16/Digital-Logic-Gate-System.git
-cd Digital-Logic-Gate-System
-```
-
-### 2. Compile the program
-
-Using GCC:
-
-``` bash
-gcc Digital_Logic_Gate_System.c -o Digital_Logic_Gate_System
-```
-
-### 3. Run the program
-
-On Windows:
-
-``` bash
-Digital_Logic_Gate_System.exe
-```
-
-On Linux/macOS:
-
-``` bash
-./Digital_Logic_Gate_System
-```
-
-## Menu
-
-``` text
 ====================================
        DIGITAL LOGIC GATE SYSTEM
 ====================================
@@ -117,31 +86,65 @@ On Linux/macOS:
 7. XNOR Gate
 8. Display Truth Table
 9. Exit
+
+Enter your choice:
 ```
 
-## Concepts Demonstrated
+---
 
-This project demonstrates:
+## ⚙️ How It Works
 
--   C functions
--   Conditional logic
--   `switch-case`
--   `do-while` loops
--   User input handling
--   Input validation
--   Logical operators
--   Bitwise XOR operator
--   Truth tables
--   Modular programming
+```
+Start Program
+      │
+      ▼
+ Display Menu
+      │
+      ▼
+Select Logic Gate
+      │
+      ├───────────────┐
+      ▼               ▼
+Binary Input      Truth Table
+ Validation         Display
+      │
+      ▼
+Gate Calculation
+      │
+      ▼
+ Display Output
+      │
+      ▼
+  Return Menu
+```
 
-## Input Validation
+---
 
-The program includes a binary input validation function that repeatedly
-asks the user for input until either `0` or `1` is entered.
+## 🔢 Input Validation
 
-## Example
+The program accepts only binary values:
 
-``` text
+```
+0 → LOW
+1 → HIGH
+```
+
+If the user enters an invalid value, the program repeatedly asks for a valid binary input.
+
+Example:
+
+```
+Enter A (0 or 1): 5
+Invalid input! Enter only 0 or 1:
+```
+
+---
+
+## 💻 Example Output
+
+### AND Gate
+
+```
 --- AND Gate ---
 
 Enter A (0 or 1): 1
@@ -150,25 +153,160 @@ Enter B (0 or 1): 1
 AND Output = 1
 ```
 
-## Educational Purpose
+### XOR Gate
 
-This project can be used as a beginner-level implementation for
-understanding the relationship between **C programming and digital logic
-design**.
+```
+--- XOR Gate ---
 
-It is suitable for students learning:
+Enter A (0 or 1): 1
+Enter B (0 or 1): 0
 
--   Digital Electronics
--   Logic Gates
--   Truth Tables
--   C Programming Fundamentals
+XOR Output = 1
+```
 
-## Author
+### Truth Table
+
+```
+----- LOGIC GATE TRUTH TABLE -----
+
+A B | AND OR NAND NOR XOR XNOR
+-------------------------------
+0 0 |  0   0    1    1   0    1
+0 1 |  0   1    1    0   1    0
+1 0 |  0   1    1    0   1    0
+1 1 |  1   1    0    0   0    1
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* **Programming Language:** C
+* **Compiler:** GCC / Any Standard C Compiler
+* **Interface:** Command Line / Console
+* **Concepts:** Digital Logic & Boolean Operations
+
+---
+
+## 📚 C Programming Concepts Used
+
+This project demonstrates several fundamental C programming concepts:
+
+* ✅ Functions
+* ✅ Variables
+* ✅ `if-else` statements
+* ✅ `switch-case`
+* ✅ `do-while` loop
+* ✅ User input using `scanf()`
+* ✅ Output using `printf()`
+* ✅ Logical operators
+* ✅ Bitwise XOR operator
+* ✅ Input validation
+* ✅ Modular programming
+
+---
+
+## 📁 Project Structure
+
+```
+Digital-Logic-Gate-System/
+│
+├── 📄 Digital_Logic_Gate_System.c
+├── 📄 README.md
+├── 📄 LICENSE
+└── 📄 .gitignore
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the Repository
+
+```
+git clone https://github.com/vinaybongale-16/Digital-Logic-Gate-System.git
+```
+
+### 2️⃣ Navigate to the Project
+
+```
+cd Digital-Logic-Gate-System
+```
+
+### 3️⃣ Compile the Program
+
+Using GCC:
+
+```
+gcc Digital_Logic_Gate_System.c -o Digital_Logic_Gate_System
+```
+
+### 4️⃣ Run the Program
+
+**Windows:**
+
+```
+Digital_Logic_Gate_System.exe
+```
+
+**Linux / macOS:**
+
+```
+./Digital_Logic_Gate_System
+```
+
+---
+
+## 🎯 Educational Purpose
+
+This project is developed as a beginner-friendly implementation to understand the relationship between:
+
+```
+C Programming
+      │
+      ▼
+Boolean Operations
+      │
+      ▼
+  Logic Gates
+      │
+      ▼
+  Truth Tables
+      │
+      ▼
+Digital Electronics
+```
+
+It can be useful for students studying **C Programming, Digital Electronics, Digital Logic Design, and Logic Gates**.
+
+---
+
+## 🔮 Future Improvements
+
+* [ ] Add a graphical user interface
+* [ ] Add circuit diagrams for each gate
+* [ ] Add multi-input gate support
+* [ ] Add Boolean expression evaluation
+* [ ] Add gate combination/circuit design
+* [ ] Add file-based result storage
+* [ ] Add a digital circuit visualization mode
+
+---
+
+## 👨‍💻 Author
 
 **Vinay Bongale**
 
-Department of Electronics & Communication Engineering
+Electronics & Communication Engineering
 
-## License
+---
+
+## ⭐ Support
+
+If you find this project useful for learning **C Programming or Digital Logic**, consider giving the repository a ⭐ on GitHub.
+
+---
+
+## 📄 License
 
 This project is licensed under the **MIT License**.
