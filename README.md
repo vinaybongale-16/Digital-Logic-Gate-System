@@ -26,7 +26,7 @@ This project connects **C programming fundamentals** with concepts from **Digita
 ## ✨ Features
 
 * 🔹 Interactive menu-driven interface
-* 🔹 Supports **7 fundamental logic gates**
+* 🔹 Supports **7 commonly used logic gates**
 * 🔹 Binary input validation
 * 🔹 Individual gate output calculation
 * 🔹 Complete logic-gate truth table
