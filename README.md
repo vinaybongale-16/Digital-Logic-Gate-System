@@ -297,7 +297,7 @@ It can be useful for students studying **C Programming, Digital Electronics, Dig
 
 **Vinay Bongale**
 
-Electronics & Communication Engineering
+Electronics & Communication Engineering Student
 
 ---
 
