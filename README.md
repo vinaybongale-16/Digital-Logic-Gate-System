@@ -38,15 +38,15 @@ This project connects **C programming fundamentals** with concepts from **Digita
 
 ## 🧠 Logic Gates Supported
 
-| # | Logic Gate | Symbol | Operation     |
-| - | ---------- | ------ | ------------- |
-| 1 | AND        | ∧      | `A && B`      |
-| 2 | OR         | ∨      | `A \|\| B`    |
-| 3 | NOT        | ¬      | `!A`          |
-| 4 | NAND       | ⊼      | `!(A && B)`   |
-| 5 | NOR        | ⊽      | `!(A \|\| B)` |
-| 6 | XOR        | ⊕      | `A ^ B`       |
-| 7 | XNOR       | ⊙      | `!(A ^ B)`    |
+| # | Logic Gate | C Operation   |
+| - | ---------- | ------------- |
+| 1 | AND        | `A && B`      |
+| 2 | OR         | `A \|\| B`    |
+| 3 | NOT        | `!A`          |
+| 4 | NAND       | `!(A && B)`   |
+| 5 | NOR        | `!(A \|\| B)` |
+| 6 | XOR        | `A ^ B`       |
+| 7 | XNOR       | `!(A ^ B)`    |
 
 ---
 
