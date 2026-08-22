@@ -38,7 +38,7 @@ This project connects **C programming fundamentals** with concepts from **Digita
 
 ## 🧠 Logic Gates Supported
 
-| # | Logic Gate | C Operation   |
+| No. | Logic Gate | C Operation   |
 | - | ---------- | ------------- |
 | 1 | AND        | `A && B`      |
 | 2 | OR         | `A \|\| B`    |
